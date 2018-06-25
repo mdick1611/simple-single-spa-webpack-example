@@ -1,9 +1,7 @@
 import * as singleSpa from 'single-spa';
 
 singleSpa.registerApplication('vue-navbar', () =>
-    import ('src/navbar/vue.app.js'), () => true);
-singleSpa.registerApplication('app-1', () =>
-  import ('../app1/app1.js'), () => true);
+    import ('../navbar/vue.app.js'), () => true);
 
 singleSpa.start();
 
