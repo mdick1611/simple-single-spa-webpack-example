@@ -20,6 +20,7 @@ module.exports = {
        */
       'react',
       'react-dom',
+      'vue',
     ],
   },
   output: {
@@ -37,6 +38,14 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
       },
+      {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader']
+      },
+      {
+          test: /\.vue$/,
+          loader: 'vue-loader'
+      }
     ],
   },
   node: {
