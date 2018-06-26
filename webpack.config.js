@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const express = require('express');
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
 
@@ -70,6 +71,9 @@ module.exports = {
   devtool: 'source-map',
   externals: [],
   devServer: {
+    before: function(app) {
+        app.use(express.static('static'))
+    },
     historyApiFallback: true
   }
 };
