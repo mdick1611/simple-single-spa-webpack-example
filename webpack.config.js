@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const express = require('express');
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
 
 module.exports = {
@@ -72,7 +72,7 @@ module.exports = {
   externals: [],
   devServer: {
     before: function(app) {
-        app.use(express.static('static'))
+        app.use('/static', express.static(__dirname + '/static'))
     },
     historyApiFallback: true
   }
