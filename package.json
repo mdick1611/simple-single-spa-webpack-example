@@ -1,5 +1,5 @@
 {
-  "name": "simple-single-spa-webpack-example",
+  "name": "simple-single-spa-webpack-vue",
   "version": "1.0.0",
   "description": "A simple example of how to use webpack with single-spa",
   "scripts": {
