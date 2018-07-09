@@ -18,19 +18,7 @@ const vueLifecycles = singleSpaVue({
 });
 
 export function mount(props) {
-    createDomElement();
     return vueLifecycles.mount(props);
-}
-
-function createDomElement() {
-    let el = document.getElementById('vue-concerts');
-
-    if (!el) {
-        el = document.createElement('div');
-        el.id = 'vue-concerts';
-        document.body.appendChild(el);
-    }
-    return el;
 }
 
 export const bootstrap = [

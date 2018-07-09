@@ -18,19 +18,7 @@ const vueLifecycles = singleSpaVue({
 });
 
 export function mount(props) {
-    createDomElement();
     return vueLifecycles.mount(props);
-}
-
-function createDomElement() {
-    let el = document.getElementById('vue-featured');
-
-    if (!el) {
-        el = document.createElement('div');
-        el.id = 'vue-featured';
-        document.body.appendChild(el);
-    }
-    return el;
 }
 
 export const bootstrap = [
