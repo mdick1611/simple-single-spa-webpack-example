@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/joeldenning/simple-single-spa-webpack-example.git"
   },
-  "author": "Joel Denning",
+  "author": "Joel Denning, Marvin Dick",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/joeldenning/simple-single-spa-webpack-example/issues"
